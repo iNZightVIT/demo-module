@@ -1,0 +1,9 @@
+Title: Demo Module
+Author: Tom Elliott
+Version: 0.0.1
+CRAN:
+    dplyr,
+    ggplot2
+Github:
+    iNZightVIT/iNZightTS
+Description: A demonstration of an iNZight add-on module.
