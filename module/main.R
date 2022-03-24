@@ -7,8 +7,7 @@ DemoModule <- setRefClass(
     ),
     methods = list(
         initialize = function(gui, which = 1L, ...) {
-            callSuper(gui, name = "Demo Module", ...)
-            print(ls())
+            callSuper(gui, ...)
 
             field1 <<- "value1"
             field2 <<- "value2"
@@ -20,7 +19,7 @@ DemoModule <- setRefClass(
         },
         mod_one = function() {
             add_body(glabel("This is Demo Module 1"))
-            add_body(glabel(e$demo_helper()))
+            add_body(glabel(mod$demo_helper()))
         },
         mod_two = function() {
             add_body(glabel("This is Demo Module 2"))
