@@ -26,3 +26,36 @@ DemoModule <- setRefClass(
         }
     )
 )
+
+DemoNumVar <- setRefClass(
+    "DemoNumVar",
+    contains = "iNZWindow",
+    fields = list(
+        value = "numeric"
+    ),
+    methods = list(
+        initialize = function(gui, ...) {
+            ok <- callSuper(gui,
+                title = "Demo Number",
+                width = "med",
+                height = "small",
+                ok = "Close",
+                cancel = NULL,
+                action = close,
+                show_code = FALSE,
+                scroll = FALSE,
+                body_direction = "vertical"
+            )
+            if (!ok) return()
+            on.exit(.self$show())
+
+            initFields(value = 0L)
+
+            val_slider <- gslider(0, 10, value = value,
+                handler = function(h, ...) value <<- svalue(h$obj))
+            add_body(val_slider)
+
+
+        }
+    )
+)

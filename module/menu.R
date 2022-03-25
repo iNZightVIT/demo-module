@@ -1,8 +1,10 @@
 menu <- list(
     Variables = list(
-        Numeric = item(
-            title = "Demo numeric variables",
-            action = function(gui, mod) DemoNumVar$new(gui, mod)
+        `Numeric Variables` = list(
+            demo = item(
+                title = "Demo numeric variables",
+                action = function(gui, mod) DemoNumVar$new(gui, mod)
+            )
         )
     ),
     # Modules = item("Demo Module Here", function(gui, mod) DemoModule$new(gui, mod = mod))
