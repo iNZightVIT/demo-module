@@ -1,6 +1,6 @@
 Title: Demo Module
 Author: Tom Elliott
-Version: 0.0.1
+Version: 0.1.0
 Imports:
     dplyr,
     ggplot2,

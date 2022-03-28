@@ -20,6 +20,7 @@ DemoModule <- setRefClass(
         mod_one = function() {
             add_body(glabel("This is Demo Module 1"))
             add_body(glabel(mod$demo_helper()))
+            add_body(glabel(mod$mod_version()))
         },
         mod_two = function() {
             add_body(glabel("This is Demo Module 2"))
