@@ -8,3 +8,4 @@ Imports:
 Github:
     iNZightVIT/iNZightTS@dev
 Description: A demonstration of an iNZight add-on module.
+Exclude: TRUE
